@@ -1,1 +1,34 @@
-* 
+* {
+  
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabuleiro {
+    width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.cartao {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+    border: 1px solid gray;
+}
+
+.cartao img {
+    width: 100px;
+    height: 100px;
+}
+
+.verso {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
