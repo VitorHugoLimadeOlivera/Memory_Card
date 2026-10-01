@@ -1,61 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Card</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da memória</title>
+  <!-- Link para o arquivo de estilização do CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Jogo da Memória</h1>
-    <section class="tabuleiro">
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
-        <section class="cartao">
-            <img class="frente" src="images/" alt="personagem">
-            <img class="verso" src="images/" alt="personagem">
-        </section>
+
+<body>   
+  <section class="header">
+    <h1>Jogo da memória</h1>  
+  </section>
+
+  <!-- Início do container principal -->
+  <section class="memory-game">    
+  
+    <!-- Início das seções dos cards - 12 cards (cartões)-->
+    <section class="memory-card" data-framework="guido">
+      <!-- O que são Data Attributes?
+        São atributos criados por você no HTML para guardar informações extras em uma tag 
+        sem precisar criar classes ou IDs.Exemplo no HTML:<div data-status="ativo" 
+        data-cor="azul">Texto</div>-->
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/mcqueen.png" alt="mcqueen" />
     </section>
+
+    <section class="memory-card" data-framework="guido">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/mcqueen.png" alt="mcqueen" />
+    </section>
+
+    <section class="memory-card" data-framework="hudson">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/lewis.png" alt="lewis" />
+    </section>
+
+    <section class="memory-card" data-framework="hudson">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/lewis.png" alt="lewis" />
+    </section>
+
+    <section class="memory-card" data-framework="mate">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/francesco.png" alt="francesco" />
+    </section>
+
+    <section class="memory-card" data-framework="mate">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/francesco.png " alt="francesco" />
+    </section>
+
+    <section class="memory-card" data-framework="mqueen">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/carla_veloso.png" alt="carla_veloso" />
+    </section>
+
+    <section class="memory-card" data-framework="mqueen">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/carla_veloso.png" alt="carla_veloso" />
+    </section>
+
+    <section class="memory-card" data-framework="radiator">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/shu.png" alt="shu_tudoroki" />
+    </section>
+
+    <section class="memory-card" data-framework="radiator">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/shu.png" alt="shu_tudoroki" />
+    </section>
+
+    <section class="memory-card" data-framework="rei">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/Jeff_Gorvette.png" alt="Jeff_Gorvette" />
+    </section>
+
+    <section class="memory-card" data-framework="rei">
+      <img class="front-face" src="img/carross_capa.png" alt="carros" />
+      <img class="back-face" src="img/Jeff_Gorvette.png" alt="Jeff_Gorvette" />
+    </section>
+    <!-- Fim das seções dos cards-->
+
+  </section>
+  <!-- Fim do container principal -->
+
+  <!-- Link para o arquivo Javascript, que será iniciado na próxima semana -->
+  <script src="js/scripts.js"></script>
 </body>
 </html>
